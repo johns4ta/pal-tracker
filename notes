@@ -1,0 +1,2 @@
+Push app to PCF
+cf push pal-tracker -p build/libs/pal-tracker.jar --random-route
