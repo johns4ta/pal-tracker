@@ -23,12 +23,14 @@ dependencies {
 
 bootRun.environment([
         "WELCOME_MESSAGE": "hello",
+        "HTTPS_DISABLED": true,
         "MANAGEMENT_SECURITY_ENABLED": false,
         "SPRING_DATASOURCE_URL": "jdbc:mysql://localhost:3306/tracker_dev?user=tracker&useSSL=false&useTimezone=true&serverTimezone=UTC&useLegacyDatetimeCode=false",
 ])
 
 test.environment([
         "WELCOME_MESSAGE": "Hello from test",
+        "HTTPS_DISABLED": true,
         "MANAGEMENT_SECURITY_ENABLED": false,
         "SPRING_DATASOURCE_URL": "jdbc:mysql://localhost:3306/tracker_test?user=tracker&useSSL=false&useTimezone=true&serverTimezone=UTC&useLegacyDatetimeCode=false",
 ])
